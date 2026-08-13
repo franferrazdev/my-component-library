@@ -38,14 +38,14 @@ export function FilterBar({ onSearchChange, onSortChange }: FilterBarProps) {
             <SelectValue placeholder="Ordenar por" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="relevant">Mais Relevante</SelectItem>
-            <SelectItem value="price-asc">
-              Preço: Do Menor para o Maior
+            <SelectItem value="Mais Relevante">Mais Relevante</SelectItem>
+            <SelectItem value="Preço: Menor para Maior">
+              Preço: Menor para Maior
             </SelectItem>
-            <SelectItem value="price-desc">
-              Preço: Do Maior para o Menor
+            <SelectItem value="Preço: Maior para Menor">
+              Preço: Maior para Menor
             </SelectItem>
-            <SelectItem value="rating">Melhor Avaliação</SelectItem>
+            <SelectItem value="Melhor Avaliação">Melhor Avaliação</SelectItem>
           </SelectContent>
         </Select>
       </div>
