@@ -1,3 +1,4 @@
+import { FilterBar } from "@/library/fase-1-ui/FilterBar";
 import { ProductCarousel } from "@/library/fase-1-ui/ProductCarousel";
 
 // Dados de teste para simular produtos de um e-commerce
@@ -7,8 +8,17 @@ const mockProducts = [
   { id: "3", title: "Mouse Sem Fio Ergonômico", url: "/products/mouse.jpg" },
   { id: "4", title: "Monitor Curvo", url: "/products/monitor.jpg" },
 ];
+import ClientArea from "./ClientArea";
 
 export default function Home() {
+  // Funções temporárias para simular a captura de dados no console do navegador
+  const handleSearch = (text: string) => {
+    console.log("Usuário digitou:", text);
+  };
+
+  const handleSort = (filter: string) => {
+    console.log("Filtro selecionado:", filter);
+  };
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-zinc-50 dark:bg-zinc-900">
       <div className="w-full max-w-4xl text-center mb-6">
@@ -16,12 +26,13 @@ export default function Home() {
           Minha Biblioteca de Componentes
         </h1>
         <p className="text-zinc-500 mt-2">
-          Fase 1: Componente de Carrossel de Produtos
+          Interfaces e Propriedades Etáticas
         </p>
       </div>
 
-      {/* Renderizando o componente finalizado */}
-      <ProductCarousel images={mockProducts} />
+      {/* Renderizando a nova Barra de Filtros */}
+      {/* Client-side interactive area */}
+      <ClientArea />
     </main>
   );
 }
