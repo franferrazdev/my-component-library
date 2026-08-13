@@ -1,7 +1,7 @@
 # 🛠️ my-component-library
 
 > [!NOTE]
-> 🇺🇸 [Read the English version below] (#english-version) | 🇧🇷 [Leia a versão em português abaixo] (#versao-em-portugues)
+> 🇺🇸 [Read the English version below](#english-version) | 🇧🇷 [Leia a versão em português abaixo](#versao-em-portugues)
 
 ---
 
