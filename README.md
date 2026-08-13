@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛠️ my-component-library
 
-## Getting Started
+> [!NOTE]
+> 🇺🇸 [Read the English version below] (#english-version) | 🇧🇷 [Leia a versão em português abaixo] (#versao-em-portugues)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<a name="versao-em-portugues"></a>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🇧🇷 Versão em Português
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Uma biblioteca pessoal de componentes de interface (UI) reutilizáveis, modulares e focados em produção. Este repositório serve como fundação técnica e acelerador de código para os meus projetos principais do portfólio (E-commerce, Dashboard Escolar, App Educacional e Quiz Técnico).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🚀 Tecnologias e Ferramentas
 
-## Learn More
+- **Core:** React, Next.js (App Router), TypeScript
+- **Estilização:** Tailwind CSS, Shadcn/ui
+- **Validação:** Zod
+- **Gerenciamento de Dados:** TanStack Query
 
-To learn more about Next.js, take a look at the following resources:
+### 📐 Organização por Fases de Aprendizado
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O projeto é estruturado de forma incremental para demonstrar evolução técnica:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. `fase-1-ui`: Componentes visuais isolados (Slide/Carrossel, Filtros).
+2. `fase-2-state`: Tratamento de formulários, validação em tempo real (Zod) e estados locais.
+3. `fase-3-global`: Gerenciamento de estado global (Zustand) e persistência em cache (LocalStorage).
+4. `fase-4-async`: Chamadas assíncronas simulados (TanStack Query) e controle de Skeletons.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<a name="english-version"></a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🇺🇸 English Version
+
+A personal library of reusable, modular, and production-ready UI components. This repository serves as a technical foundation and code accelerator for my main portfolio projects (e-commerce, School Dashboard, Educational App, and Technical Quiz).
+
+### 🚀 Tech Stack
+
+- **Core:** React, Next.js (App Router), TypeScript
+- **Styling:** Tailwind CSS, Shadcn/ui
+- **Global State:** Zustand
+- **Validation:** Zod
+- **Data Management:** TanStack Query
+
+### 📐 Project Structure & Phases
+
+The project is structured incrementally to demonstrate technical growth:
+
+1. `fase-1-ui`: Isolated visual components (Carousel/Slide, Filter Bar).
+2. `fase-2-state`: Form handling, real-time validation (Zod), and local state.
+3. `fase-3-global`: Global state management (Zustand) and cache persistence (LocalStorage).
+4. `fase-4-async`: Simulated asynchonous data fetching (TanStack Query) and Skeleton screens.
