@@ -7,6 +7,7 @@ import {
   ProductTable,
   ProductItem,
 } from "@/library/fase-2-state/ProductsTable";
+import { CartDrawer } from "@/library/fase-3-global/CartDrawer";
 
 const mockProducts = [
   { id: "1", title: "Notebook Gamer", url: "/products/notebook.jpg" },
@@ -68,7 +69,7 @@ export default function ClientArea() {
       <FilterBar onSearchChange={handleSearch} onSortChange={handleSort} />
       <ProductCarousel images={mockProducts} />
 
-      {/* Linha divisória de Fase */}
+      {/* Linha divisória entre Fases */}
       <hr className="border-zinc-200 dark:border-zinc-800 my-4" />
 
       {/* Componentes da Fase 2 */}
@@ -84,6 +85,19 @@ export default function ClientArea() {
           Fase 2: Manipulação de Dados e Interface TypeScript
         </h2>
         <ProductTable initialProducts={tableMockData} />
+      </div>
+
+      {/* Linha divisória entre Fases  */}
+      <hr className="border-bs-zinc-200 dark:border-bs-zinc-800 my-4" />
+
+      <div className="h-full">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-semibold text-zinc-500">
+            Fase 3: Estado Global com Zustand & Local Storage
+          </h2>
+          {/* Botão flutuante de carrinho de compras global */}
+          <CartDrawer />
+        </div>
       </div>
     </div>
   );

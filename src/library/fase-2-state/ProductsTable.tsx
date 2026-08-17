@@ -12,7 +12,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-// use native <img> for dynamic/client images to avoid next/image StaticImport typing
+
+import { useCartStore } from "@/library/fase-3-global/cart-store";
+import { ShoppingBag } from "lucide-react";
 
 export interface ProductItem {
   id: string;
@@ -31,6 +33,8 @@ export function ProductTable({ initialProducts }: ProductsTableProps) {
   // Estado global para gerenciar a lista de produtos
   const [products, setProducts] =
     React.useState<ProductItem[]>(initialProducts);
+
+  const addItem = useCartStore((state) => state.addItem);
 
   // Função para simular a remoção de um item do array em tempo real
   function handleDeleteProduct(id: string) {
@@ -102,6 +106,22 @@ export function ProductTable({ initialProducts }: ProductsTableProps) {
                   {formatCurrency(product.price)}
                 </TableCell>
                 <TableCell className="text-center">
+                  {/* Botão de comprar para disparar a ação de colocar produto no carrinho */}
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="h-8 w-8 text-zinc-500 hover:text-shadow-zinc-900 hover:bg-zinc-100"
+                    onClick={() =>
+                      addItem({
+                        id: product.id,
+                        name: product.name,
+                        price: product.price,
+                        imageUrl: product.imageUrl ?? "",
+                      })
+                    }
+                  >
+                    <ShoppingBag className="h-4 w-4" />
+                  </Button>
                   {/* Botão de Excluir que dispara a alteração do array no estado local */}
                   <Button
                     variant="ghost"
