@@ -8,6 +8,7 @@ import {
   ProductItem,
 } from "@/library/fase-2-state/ProductsTable";
 import { CartDrawer } from "@/library/fase-3-global/CartDrawer";
+import { AsyncProductsList } from "@/library/fase-4-async/AsyncProductsList";
 
 const mockProducts = [
   { id: "1", title: "Notebook Gamer", url: "/products/notebook.jpg" },
@@ -44,7 +45,7 @@ const tableMockData: ProductItem[] = [
   {
     id: "4",
     name: "Monitor Curvo",
-    category: "Eletrônicos",
+    category: "Monitores",
     price: 2999.0,
     stock: 10,
     imageUrl: "/products/monitor.jpg",
@@ -98,6 +99,13 @@ export default function ClientArea() {
           {/* Botão flutuante de carrinho de compras global */}
           <CartDrawer />
         </div>
+      </div>
+
+      <div className="w-full">
+        <h2 className="text-xl font-semibold text-center mb-6 text-zinc-500">
+          Fase 4: Requisições Assíncronas (TanStack Query & Skeletons)
+        </h2>
+        <AsyncProductsList />
       </div>
     </div>
   );

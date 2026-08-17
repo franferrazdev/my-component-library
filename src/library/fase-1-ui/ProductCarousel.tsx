@@ -62,6 +62,7 @@ export function ProductCarousel({ images }: ProductCarouselProps) {
                         alt={image.title}
                         fill
                         priority
+                        loading="eager"
                         className="object-cover"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
